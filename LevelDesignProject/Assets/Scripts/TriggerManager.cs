@@ -29,7 +29,6 @@ public class TriggerManager : MonoBehaviour
 
         if (other.gameObject.tag == "Death")
         {
-            Debug.Log("Enters Death Trigger");
             controller.enabled = false;
             gameObject.transform.position = respawnPoint.transform.position;
             controller.enabled = true;
