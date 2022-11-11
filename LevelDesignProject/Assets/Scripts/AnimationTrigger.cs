@@ -26,6 +26,8 @@ public class AnimationTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+		 animator.SetBool("triggered", false);
+		 
             if (useCustomCamera)
             {
                 CinemachineCamSwitcher.SwitchCamera(CinemachineCamSwitcher.defaultCamera);
